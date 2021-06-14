@@ -15,6 +15,11 @@ service FretesService {
   }
 }
 
+message ErrorDetials{
+  int32 code = 1;
+  string message = 2;
+}
+
 message CalculaFreteRequest {
   string cep = 1;
 }
